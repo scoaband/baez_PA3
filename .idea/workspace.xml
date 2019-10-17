@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef54ebfd-03e5-4d02-8cc6-f54de1da0e1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baez_PA3/baez_p1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baez_PA3/baez_p1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baez_p1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baez_p1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,5 +88,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/baez_PA3$baez_p1.ic" NAME="baez_p1 Coverage Results" MODIFIED="1571326404918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
