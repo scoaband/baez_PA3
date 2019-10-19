@@ -11,7 +11,7 @@ public class baez_p1 {
     // Regular Colors
     public static final String BLACK = "\033[0;30m";   // BLACK
     private static final String RED = "\033[0;31m";    // RED
-    public static final String GREEN = "\033[0;32m";   // GREEN
+    private static final String GREEN = "\033[0;32m";   // GREEN
     public static final String YELLOW = "\033[0;33m";  // YELLOW
     private static final String BLUE = "\033[0;34m";   // BLUE
     private static final String PURPLE = "\033[0;35m"; // PURPLE
@@ -94,16 +94,16 @@ public class baez_p1 {
         switch(this.level)
         {
             case 1:
-                seed = 10;
+                seed = 9;
                 break;
             case 2:
-                seed = 100;
+                seed = 99;
                 break;
             case 3:
-                seed = 1000;
+                seed = 999;
                 break;
             case 4:
-                seed = 10000;
+                seed = 9999;
                 break;
         }
 
@@ -218,8 +218,8 @@ public class baez_p1 {
                 String PT = pt;
 
                 // Gen xNumbers
-                x1 = genRNum();
-                x2 = genRNum();
+                x1 = genRNum() + 1;
+                x2 = genRNum() + 1;
                 x3 = getRanNum();
 
                     if(PT == "4"){
@@ -281,6 +281,9 @@ public class baez_p1 {
                 // testing
                 // System.out.println(round(correctAns,2));
                 // Taking Answer
+                if(this.level > 1){
+                    System.out.println(GREEN + " round answer to the hundredth place value!" + RESET);
+                }
                 System.out.print(" Your answer:  ");
                 answer = scan.nextDouble();
                 round(answer, 2);
@@ -312,9 +315,9 @@ public class baez_p1 {
                     + " Please ask your teacher for extra help. \n");
         }
         System.out.printf(" Data= add: %d sub: %d mult: %d Div: %d ", add, sub, mult, div);
-        System.out.print(RED + "\n Press 1 to begin a new session: " + RESET);
-        int newSession = scan.nextInt();
-        if(newSession == 1) {
+        System.out.print(RED + "\n Begin a new session: y/n ?  " + RESET);
+        char newSession = scan.next().charAt(0);
+        if(newSession == 'y') {
             System.out.print("\n\n");
             new baez_p1();
         }
